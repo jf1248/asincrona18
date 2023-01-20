@@ -13,7 +13,7 @@ export class FormularioService {
   constructor(private http: HttpClient) { }
 
   postUser(user: any): Observable<string> {
-    return this.http.post<string>("https://reqres.in/api/register", user)
+    return this.http.post<string>("https://reqres.in/api/users", user)
   }
 }
 
